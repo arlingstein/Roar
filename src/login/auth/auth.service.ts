@@ -14,7 +14,7 @@ export class AuthService {
   }
 
   loginWithEmailAndPassword(email: string, password: string) {
-    this.firebaseAuth.auth.signInWithEmailAndPassword(email, password).catch(err => console.log(err));
+    return this.firebaseAuth.auth.signInWithEmailAndPassword(email, password);
   }
 
   loginWithUsernameAndPassword(username: string, password: string) {
@@ -22,6 +22,10 @@ export class AuthService {
   }
 
   loginWithGoogle() {
-     return this.firebaseAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+    return this.firebaseAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+  }
+
+  logout() {
+    return this.firebaseAuth.auth.signOut();
   }
 }

@@ -2,38 +2,38 @@
   <!--<div class="tab-content">-->
   <div>
     <div id="signup">
-      <h1>Register</h1>
+      <h1>REGISTER</h1>
 
       <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
 
         <div class="top-row">
           <div class="field-wrap">
-            <label>
-                First Name<span class="req">*</span>
+            <label *ngIf="!firstNameRef.value">
+                First Name
               </label>
-            <input type="text" required autocomplete="off" formControlName="firstName"/>
+            <input #firstNameRef type="text" required autocomplete="off" formControlName="firstName"/>
           </div>
 
           <div class="field-wrap">
-            <label>
-                Last Name<span class="req">*</span>
+            <label *ngIf="!lastNameRef.value">
+                Last Name
               </label>
-            <input type="text" required autocomplete="off" formControlName="lastName"/>
+            <input #lastNameRef type="text" required autocomplete="off" formControlName="lastName"/>
           </div>
         </div>
 
         <div class="field-wrap">
-          <label>
-              Email Address<span class="req">*</span>
+          <label *ngIf="!emailRef.value">
+              Email<span class="req"></span>
             </label>
-          <input type="email" required autocomplete="off" ormControlName="email"/>
+          <input #emailRef type="email" required autocomplete="off" formControlName="email"/>
         </div>
 
         <div class="field-wrap">
-          <label>
-              Set A Password<span class="req">*</span>
+          <label *ngIf="!passwordRef.value">
+              Password
             </label>
-          <input type="password" required autocomplete="off" formControlName="password"/>
+          <input #passwordRef type="password" required autocomplete="off" formControlName="password"/>
         </div>
 
         <button type="submit" class="button button-block">Get Started</button>

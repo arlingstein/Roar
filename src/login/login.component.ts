@@ -12,8 +12,11 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   loginform: FormGroup;
   loginError: boolean;
+  errorMessage: string;
 
-  constructor(private fb: FormBuilder, private authService: AuthService) {
+  constructor(private fb: FormBuilder,
+              private authService: AuthService,
+              private router: Router) {
       this.loginError = false;
       this.loginform = fb.group({
         'email': ['', Validators.required],
@@ -25,7 +28,9 @@ export class LoginComponent implements OnInit {
   }
 
  loginWithGoogle() {
-   this.authService.loginWithGoogle();
+   this.authService.loginWithGoogle()
+   .then( res => this.router.navigateByUrl('/home'))
+   .catch(err => console.log(err));
  }
 
   onSubmit() {
@@ -33,6 +38,8 @@ export class LoginComponent implements OnInit {
     const password = this.loginform.get('password').value;
     console.log(email);
     console.log(password);
-    this.authService.createUserWithEmailAndPassword(email, password);
+    this.authService.loginWithEmailAndPassword(email, password)
+     .then(suc => this.router.navigateByUrl('/home'))
+     .catch(err => this.errorMessage = err);
   }
 }

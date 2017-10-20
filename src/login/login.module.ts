@@ -15,11 +15,10 @@ import { AngularFireAuth } from 'angularfire2/auth';
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
    { path: 'login', component: LoginComponent},
-   // { path: '**', component: RegisterComponent}
 ];
 
 export const firebaseConfig = {
-    apiKey: 'AIzaSyCXED1cY3hiUDPMiiy_p_amvPFmmGC2S8c',
+    apiKey: 'FAIzaSyCXED1cY3hiUDPMiiy_p_amvPFmmGC2S8cd',
     authDomain: 'roar-f981e.firebaseapp.com',
     databaseURL: 'https://roar-f981e.firebaseio.com',
     projectId: 'roar-f981e',

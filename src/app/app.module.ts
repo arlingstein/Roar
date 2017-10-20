@@ -7,11 +7,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LoginModule } from '../login/login.module';
 import { RegisterModule } from '../register/register.module';
 import { TodoModule } from './to-do/todo/todo.module';
+import { HomepageModule } from './homepage/homepage.module';
+import { HeadernavModule } from './headernav/headernav.module';
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from '../register/register.component';
 import { LoginComponent } from '../login/login.component';
 import { TodoComponent } from './to-do/todo/todo.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { HeadernavComponent } from './headernav/headernav.component';
 
 // routes
 export const ROUTES: Routes = [
@@ -30,6 +34,8 @@ export const ROUTES: Routes = [
     BrowserAnimationsModule,
     LoginModule,
     RegisterModule,
+    HomepageModule,
+    HeadernavModule,
     RouterModule.forRoot(ROUTES),
     // RegisterModule
   ],

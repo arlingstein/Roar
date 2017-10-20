@@ -1,100 +1,279 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
 .login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
 }
+
 .form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 .form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
+
 .form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #6457A6;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #6457A6;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
 }
-.form button:hover,.form button:active,.form button:focus {
-  background: #5C2751;
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #5C2751;
 }
+
 .form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
 }
+
 .form .message a {
-  color: #4CAF50;
-  text-decoration: none;
+    color: #4CAF50;
+    text-decoration: none;
 }
+
 .form .register-form {
-  display: none;
+    display: none;
 }
+
 .container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
 }
-.container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
+
+.container:before,
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
 }
+
 .container .info {
-  margin: 50px auto;
-  text-align: center;
+    margin: 50px auto;
+    text-align: center;
 }
+
 .container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
 }
+
 .container .info span {
-  color: #4d4d4d;
-  font-size: 12px;
+    color: #4d4d4d;
+    font-size: 12px;
 }
+
 .container .info span a {
-  color: #000000;
-  text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
+
 .container .info span .fa {
-  color: #EF3B3A;
+    color: #EF3B3A;
 }
+
+.form button.google_button {
+    background-image: url(google_button_normal.png);
+    background-color: white;
+    background-size: 270px 65px;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    height: 70px;
+    
+}
+
+.form button.google_button :hover {
+    background-image: url(google_button_focus.png);
+}
+
 body {
-  background: #6457A6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+    background: #6457A6;
+    /* fallback for old browsers */
+   background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #ebebeb;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #673AB7;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+header>nav>div {
+    float: left;
+    width: 16.6666%;
+    height: 100%;
+    position: relative;
+}
+
+header>nav>div>a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 50px;
+    color: #fbfbfb;
+    transition: background-color 0.2s ease;
+    text-transform: uppercase;
+}
+
+header>nav>div:hover>a {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+header>nav>div>div {
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    min-width: 200%;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 10px;
+}
+
+header>nav>div:not(:first-of-type):not(:last-of-type)>div {
+    left: -50%;
+    border-radius: 0 0 3px 3px;
+}
+
+header>nav>div:first-of-type>div {
+    left: 0;
+    border-radius: 0 0 3px 0;
+}
+
+header>nav>div:last-of-type>div {
+    right: 0;
+    border-radius: 0 0 0 3px;
+}
+
+header>nav>div:hover>div {
+    display: block;
+}
+
+header>nav>div>div>a {
+    display: block;
+    float: left;
+    padding: 8px 10px;
+    width: 46%;
+    margin: 2%;
+    text-align: center;
+    background-color: #673AB7;
+    color: #fbfbfb;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+
+header>nav>div>div>a:hover {
+    background-color: #212121;
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 100px;
+    font-weight: 100;
+}
+
+p {
+    color: #aaa;
+    font-weight: 300;
+}
+
+@media (max-width:600px) {
+    header>nav>div>div>a {
+        margin: 5px 0;
+        width: 100%;
+    }
+    header>nav>div>a>span {
+        display: none;
+    }
 }
