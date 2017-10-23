@@ -104,6 +104,15 @@ p {
 }
 
 #logout_button {
- background-color: coral;
- height: 100%;
+    background-color: coral;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#logout_button_test {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #673AB7;
+    background-image: url("../headernav/logout4.png");
+    background-repeat: no-repeat;
 }
