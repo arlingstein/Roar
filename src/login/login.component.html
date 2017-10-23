@@ -7,7 +7,11 @@
       <button type="submit" [disabled]="!loginform.valid">LOGIN</button>
       <p class="message">Not registered? <a routerLink="/register">Create an account</a></p>
       <button class="google_button" (click)="loginWithGoogle()"></button>
+      <!--<input type="file" accept="image/*;capture=camera">-->
+      <!--<input type="file" accept="video/*;capture=camcorder">-->
+      <button (click)="facialRecognition()"> Facial Recognition </button>
     </form>
   </div>
+  <div class="facial_recognition"></div>
 </div>
 
